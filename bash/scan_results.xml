@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94 scan initiated Fri Nov 10 00:03:26 2023 as: nmap -sn -R -&#45;open -oX scan_results.xml 192.168.0.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -R -&#45;open -oX scan_results.xml 192.168.0.0/24" start="1699563806" startstr="Fri Nov 10 00:03:26 2023" version="7.94" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<host><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="10939" rttvar="10939" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="192.168.0.114" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="18329" rttvar="18329" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.0.125" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="53261" rttvar="53261" to="266305"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.0.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="69180" rttvar="69180" to="345900"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.0.157" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="69107" rttvar="69107" to="345535"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="192.168.0.188" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="11711" rttvar="11711" to="100000"/>
+</host>
+<host><status state="up" reason="echo-reply" reason_ttl="64"/>
+<address addr="192.168.0.190" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<times srtt="996" rttvar="3116" to="100000"/>
+</host>
+<runstats><finished time="1699563812" timestr="Fri Nov 10 00:03:32 2023" summary="Nmap done at Fri Nov 10 00:03:32 2023; 256 IP addresses (7 hosts up) scanned in 5.53 seconds" elapsed="5.53" exit="success"/><hosts up="7" down="249" total="256"/>
+</runstats>
+</nmaprun>

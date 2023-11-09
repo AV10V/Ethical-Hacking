@@ -10,7 +10,7 @@ echo "[+] Converting to HTML..."
 
 xsltproc scan_results.xml -o results.html
 
-echo "[+] Succes! Please check results.html"
+echo "[+] Success! Please check results.html"
 	
 
 

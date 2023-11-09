@@ -6,6 +6,13 @@ echo "[+] Scanning with Nmap..."
 
 nmap -sn -R --open -oX scan_results.xml $url
 
+echo "[+] Converting to HTML..."
+
+xsltproc scan_results.xml -o results.html
+
+echo "[+] Succes! Please check results.html"
+	
+
 
 # -sn: This option skips the port scan and only performs host discovery. 
 

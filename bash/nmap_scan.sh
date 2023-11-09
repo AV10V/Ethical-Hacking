@@ -1,10 +1,10 @@
 #!/bin/bash
 
-taget=$1
+url=$1
 
 echo "[+] Scanning with Nmap..."
 
-nmap -sn -R --open -oX scan_results.xml $target
+nmap -sn -R --open -oX scan_results.xml $url
 
 
 # -sn: This option skips the port scan and only performs host discovery. 

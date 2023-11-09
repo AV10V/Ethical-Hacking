@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#usage sh nmap.sh <target>
-
 taget=$1
 
 echo "[+] Scanning with Nmap..."

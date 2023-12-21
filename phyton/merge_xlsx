@@ -1,0 +1,26 @@
+import os
+import pandas as pd
+
+# Получить текущую рабочую папку
+current_folder = os.getcwd()
+
+# Путь к папке с файлами xlsx (в текущей папке)
+folder_path = os.path.join(current_folder)
+
+# Получить список всех файлов xlsx в папке
+xlsx_files = [f for f in os.listdir(folder_path) if f.endswith('.xlsx')]
+
+# Инициализировать пустой DataFrame
+merged_df = pd.DataFrame()
+
+# Объединить все файлы в один DataFrame
+for file in xlsx_files:
+    file_path = os.path.join(folder_path, file)
+    df = pd.read_excel(file_path, index_col=None, header=None)
+    merged_df = merged_df.append(df, ignore_index=True)
+
+# Сохранить объединенный DataFrame в новый xlsx файл (в текущей папке)
+output_file = os.path.join(current_folder, 'merged_output.xlsx')
+merged_df.to_excel(output_file, index=False, header=False)
+
+print(f'Файлы объединены и сохранены в {output_file}')

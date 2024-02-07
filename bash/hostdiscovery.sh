@@ -1,8 +1,5 @@
-  GNU nano 7.2                                                            host_discovery.sh                                                                      
 #!/bin/bash
-# A regime linkare su /bin con nome scanconvert
 
-# Nome file preceduto da _
 scan_and_convert() {
   subnet="$1"
   xml_file="${subnet//\//_}.xml"
@@ -15,7 +12,6 @@ scan_and_convert() {
     nmap -sn -PE -PP -PS21,22,23,25,80,113,443,31339 -PA80,113,443,10042 --source-port 53 -vvv -oX "output/$xml_file" "$subnet"
   fi
 
-  # Installato nmap-converter da git hub e linkato su /bin senza estensione
   nmap-converter -o "output/$xml_file.xlsx" "output/$xml_file"
 }
 
